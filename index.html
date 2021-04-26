@@ -421,76 +421,12 @@ nav {
 </head>
 
 <body>
-    <script>
-  const $html = document.documentElement;
-const $ancla = document.getElementsByTagName("nav");
-const $titulo = document.querySelector(".principal-titulo");
-const $subtitulo = document.querySelector(".principal-subtitulo");
-const $cambio = document.querySelector(".navegacion-ancla-cambio");
-const $significadoTitulo = document.querySelector(".significado-titulo");
-const $significadoTexto = document.querySelector(".significado-texto");
-const $significado = document.querySelector(".significado");
-const $libroImagen = document.querySelector(".libro-imagen");
-const $libros = document.querySelector(".libros");
-const $libro = document.querySelector(".libro");
-const $libro1 = document.querySelector(".libro1");
-const $libroTitulo1 = document.querySelector(".libro-titulo1");
-const $libroTitulo2 = document.querySelector(".libro-titulo2");
-const $libroSubtitulo1 = document.querySelector(".libro-subtitulo1");
-const $libroSubtitulo2 = document.querySelector(".libro-subtitulo2");
-let claro = true;
-
-const modoOscuro = () => {
-  if(claro == true){
-    $html.setAttribute("class" , "fondo-oscuro");
-    $titulo.setAttribute("class" , "principal-titulo-oscuro");
-    $subtitulo.setAttribute("class" , "principal-subtitulo-oscuro");
-    $cambio.setAttribute("class" , "navegacion-ancla-cambio-seleccion");
-    $significado.setAttribute("class" , "significado-oscuro");
-    $significadoTitulo.setAttribute("class" , "significado-titulo-oscuro");
-    $significadoTexto.setAttribute("class" , "significado-texto-oscuro");
-    $libroImagen.setAttribute("class" , "libro-imagen-oscuro");
-    $libros.setAttribute("class" , "libros-oscuro");
-    $libro.setAttribute("class" , "libro-oscuro");
-    $libro1.setAttribute("class" , "libro1-oscuro");
-    $libroTitulo1.setAttribute("class" , "libro-titulo1-oscuro");
-    $libroTitulo2.setAttribute("class" , "libro-titulo2-oscuro");
-    $libroSubtitulo1.setAttribute("class" , "libro-subtitulo1-oscuro");
-    $libroSubtitulo2.setAttribute("class" , "libro-subtitulo2-oscuro");
-    claro = false
-  }
-  else{
-    $html.setAttribute("class" , "fondo");
-    $titulo.setAttribute("class" , "principal-titulo");
-    $subtitulo.setAttribute("class" , "principal-subtitulo");
-    $cambio.setAttribute("class" , "navegacion-ancla-cambio");
-    $significado.setAttribute("class" , "significado");
-    $significadoTitulo.setAttribute("class" , "significado-titulo");
-    $significadoTexto.setAttribute("class" , "significado-texto");
-    $libroImagen.setAttribute("class" , "libro-imagen");
-    $libros.setAttribute("class" , "libros");
-    $libro.setAttribute("class" , "libro");
-    $libro1.setAttribute("class" , "libro1");
-    $libroSubtitulo1.setAttribute("class" , "libro-subtitulo1");
-    $libroSubtitulo2.setAttribute("class" , "libro-subtitulo2");
-    claro = true
-  }
-}
-
-function quees() {
-  speechSynthesis.speak(new SpeechSynthesisUtterance("La normalización es la adaptación o el costumbrismo de acciones que normalmente están fuera de la norma, se vuelven costumbre y se cree que implementa pensando que eso es lo normal, creando situaciones que cuando nos paramos a analizarlas pueden llegar a ser muy controversiales, denigrantes e incluso ilegales"));
-}
-async function libros() {
-  await speechSynthesis.speak(new SpeechSynthesisUtterance("Primer libro Katniss Everdeen debe enfrentarse a los juegos del hambre, un evento en el que participan 2 personas de cada distrito y se matan hasta que queda solo una de ellas, hecho para recordar a los distritos su derrota frente al capitolio, que es ahora quien dirige Panem, el país en que Katniss vive "));
-}
-  </script>
   <nav class="navegacion">
     <a href="#significado" class="navegacion-ancla" onclick="quees()">¿Qué es?</a>
     <a href="#libros" class="navegacion-ancla" onclick="libros()">Libros</a>
     <a href="#relacion" class="navegacion-ancla">Relación</a>
     <a href="#conclusion" class="navegacion-ancla">Conclusión</a>
-    <a href="#" class="navegacion-ancla">Integrantes</a>
-    <a href="#" class="navegacion-ancla-cambio" onclick="modoOscuro()">Modo Oscuro</a>
+    <a href="#integrantes" class="navegacion-ancla">Integrantes</a>
   </nav>
   <div class="principal">
     <div class="principal-texto">
@@ -614,11 +550,39 @@ async function libros() {
       lo son la discriminación, la manipulación mediatica y, sobre todo, la normalización que tenemos frente a estos,
       siendo por esto mismo un muy buen exponente de la normalización de la injusticia</p>
   </div>
-  <div class="significado" id="significado" style="margin-top: 0px;">
+  <div class="significado" id="integrantes" style="margin-top: 0px;">
     <h2 class="significado-titulo">Integrantes</h2>
     <ul class="significado-texto">Axel Robayo - Relator <br>David Muñoz - Coordinador <br>Alejandro Mendez - Supervisor
       <br>Samuel Acosta - Creativo <br>Juan Camilo Rosero - Crítico
     </ul>
+  </div>
+  <div class="relacion">
+    <h2 class="significado-titulo alineado" id="conclusion">Citas</h2>
+    <p class="significado-texto otramargen" id="leer">
+    <ul>
+      <a
+        href="https://www.casadellibro.com/libro-balada-de-pajaros-cantores-y-serpientes/9788427220287/11380135#:~:text=Sinopsis%20de%20BALADA%20DE%20P%C3%81JAROS%20CANTORES%20Y%20SERPIENTES&text=tiene%20un%20precio.-,Es%20la%20ma%C3%B1ana%20de%20la%20cosecha%20que%20dar%C3%A1%20comienzo%20a,como%20mentor%20de%20los%20Juegos.">Primera
+        cita</a>
+      <a href="https://www.elmundo.es/elmundo/trailers/fichas/2013/11/12022_los_juegos_del_hambre__en_llamas.html">Segunda
+        cita</a>
+      <a href="https://www.filmaffinity.com/es/film520063.html">Tercera</a>
+      <a href="https://los-juegos-del-hambre.fandom.com/wiki/Los_Juegos_del_Hambre:_Sinsajo,_Parte_2">Cuarta
+        cita</a>
+      <a href="https://es.wikipedia.org/wiki/Manipulaci%C3%B3n_de_los_medios_de_comunicaci%C3%B3n">Quinta
+        cita</a>
+      <a href="https://www.sensacine.com/peliculas/pelicula-145083/criticas-espectadores/">Sexta
+        cita</a>
+      <a
+        href="https://expansion.mx/opinion/2014/11/21/opinion-los-juegos-del-hambre-un-reflejo-de-la-sociedad-estadounidense">Séptima
+        cita</a>
+      <a href="https://www.revistacactus.com/la-ideologia-en-los-juegos-del-hambre/">Octava
+        cita</a>
+      <a href="http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&pid=S2145-48922012000100002">Novena
+        cita</a>
+      <a href="https://los-juegos-del-hambre.fandom.com/wiki/Los_Juegos_del_Hambre">Décima
+        cita</a>
+    </ul>
+    </p>
   </div>
 </body>
 
